@@ -104,6 +104,35 @@ fig.update_layout(title="<b>Prison population in England and Wales</b>",
                       ],
                   )
 
+'''Still in development. Range selector is no longer working following switch of
+x-values to weeks of the year'''
+
+# fig.update_xaxes(hoverformat = '%d %b %Y',
+#                  tickformatstops = [
+#                          dict(dtickrange=[None, "M0.5"], value="%e %b"),
+#                          dict(dtickrange=["M0.5", "M11"], value="%b %Y"),
+#                          dict(dtickrange=["M11", None], value="%Y")
+#                          ],
+#                   rangeselector=dict(
+#                           x=-0.06,
+#                           y=0.91,
+#                           buttons=list([
+#                                   dict(count=3,
+#                                       label="3m",
+#                                       step="month",
+#                                       stepmode="backward"),
+#                                  dict(count=6,
+#                                       label="6m",
+#                                       step="month",
+#                                       stepmode="backward"),
+#                                  dict(count=1,
+#                                       label="1y",
+#                                       step="year",
+#                                       stepmode="backward"),
+#                                  dict(step="all")])
+#                                  )
+#                   )
+
 fig.update_yaxes(range=[78000, 87000], nticks=6)
 
 
